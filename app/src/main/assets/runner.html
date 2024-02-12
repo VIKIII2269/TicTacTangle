@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="driverstyle.css">
+
+
+
+<center>
+
+    <div class="relative">
+        <canvas id="myCanvas" width="1000" height="1100">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <div class="absolute" id="startMenu">
+            <p class="centeredbig">Tic Tac Tangle</p>
+\
+            <p class="centered" onclick="startGame(1)"><button>PLAY</button></p>
+            <p class="centered" onclick="about()"><button>ABOUT US</button></p>
+            <p class="centered" onclick="howto()"><button>HOW TO PLAY?</button></p>
+
+        </div>
+        <div class="absolute" id="turnMenu" hidden="hidden">
+            <p class="centeredbig">Tic Tac Tangle</p>
+            <p class="centered" onclick="setGame(0)"><button>PLAYER 1st</button></p>
+            <p class="centered" onclick="setGame(1)"><button>AI 1st</button></p>
+        </div>
+        <div class="absolute" id="winMenu" hidden="hidden">
+            <p class="centeredbig" id="result">PLAYER 1 WINS !</p>
+            <p class="centered" onclick="menu()"><button>PLAY AGAIN</button></p>
+        </div>
+        <div class="absolute fade" id="loader" hidden>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+</center>
+
+<script src="drivercode.js"></script>
+
+
